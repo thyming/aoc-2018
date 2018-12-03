@@ -13,6 +13,9 @@ defmodule Mix.Tasks.Day2Part1 do
   """
 
   @impl Aoc2018
+  def day, do: 2
+
+  @impl Aoc2018
   def apply(lines) do
     lines
     |> Enum.map(&String.trim/1)

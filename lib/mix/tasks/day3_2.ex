@@ -15,6 +15,9 @@ defmodule Mix.Tasks.Day3Part2 do
   """
 
   @impl Aoc2018
+  def day, do: 3
+
+  @impl Aoc2018
   def apply(lines) do
     cutouts = lines
               |> Enum.map(&Cutout.parse/1)
@@ -46,7 +49,7 @@ defmodule Mix.Tasks.Day3Part2 do
        )
     |> Enum.reduce(
          ids,
-         fn {coord, occupants}, ids ->
+         fn {_, occupants}, ids ->
            if MapSet.size(occupants) > 1 do
              Map.drop(ids, occupants)
            else
@@ -58,7 +61,4 @@ defmodule Mix.Tasks.Day3Part2 do
     |> Enum.at(0)
 
   end
-
-
-
 end

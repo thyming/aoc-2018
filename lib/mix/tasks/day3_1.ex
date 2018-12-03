@@ -35,6 +35,9 @@ defmodule Mix.Tasks.Day3Part1 do
   end
 
   @impl Aoc2018
+  def day, do: 3
+
+  @impl Aoc2018
   def apply(lines) do
     lines
     |> Enum.map(&Cutout.parse/1)
@@ -56,7 +59,4 @@ defmodule Mix.Tasks.Day3Part1 do
     |> Enum.filter(&(&1 > 1))
     |> Enum.count
   end
-
-
-
 end

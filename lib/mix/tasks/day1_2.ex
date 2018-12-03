@@ -1,6 +1,7 @@
 defmodule Mix.Tasks.Day1Part2 do
   @behaviour Aoc2018
 
+
   use Aoc2018
   use Mix.Task
 
@@ -11,6 +12,9 @@ defmodule Mix.Tasks.Day1Part2 do
       10
 
   """
+
+  @impl Aoc2018
+  def day, do: 1
 
   @impl Aoc2018
   def apply(lines) do

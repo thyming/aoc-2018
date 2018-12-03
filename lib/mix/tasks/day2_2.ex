@@ -13,6 +13,9 @@ defmodule Mix.Tasks.Day2Part2 do
   """
 
   @impl Aoc2018
+  def day, do: 2
+
+  @impl Aoc2018
   def apply(lines) do
     passes = lines
              |> Enum.at(0)
