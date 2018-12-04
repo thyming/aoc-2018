@@ -5,5 +5,6 @@ defmodule Aoc2018Test do
   doctest Mix.Tasks.Day2Part2
   doctest Mix.Tasks.Day3Part1
   doctest Mix.Tasks.Day3Part2
-
+  doctest Mix.Tasks.Day4Part1
+  doctest Mix.Tasks.Day4Part2
 end

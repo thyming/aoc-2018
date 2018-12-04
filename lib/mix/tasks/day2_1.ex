@@ -13,7 +13,7 @@ defmodule Mix.Tasks.Day2Part1 do
   """
 
   @impl Aoc2018
-  def day, do: 2
+  def day, do: "2"
 
   @impl Aoc2018
   def apply(lines) do
@@ -38,7 +38,7 @@ defmodule Mix.Tasks.Day2Part1 do
     |> Enum.reduce(&(&1 * &2))
   end
 
-  defp frequency(map) do
+  def frequency(map) do
     Enum.reduce(map, %{}, fn c, acc -> Map.update(acc, c, 1, &(&1 + 1)) end)
   end
 end

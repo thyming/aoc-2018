@@ -5,7 +5,7 @@ defmodule Mix.Tasks.Day1Part1 do
   use Mix.Task
 
   @impl Aoc2018
-  def day, do: 1
+  def day, do: "1"
 
   @impl Aoc2018
   def apply(lines) do

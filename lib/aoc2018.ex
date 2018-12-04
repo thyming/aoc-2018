@@ -32,8 +32,8 @@ defmodule Aoc2018 do
     end
   end
 
-  @callback apply([String.t]) :: Any
-  @callback day() :: String
+  @callback apply([String.t]) :: Any.t
+  @callback day :: String.t
 
   def apply!(implementation, input) do
     implementation.apply(input)
